@@ -1,0 +1,13 @@
+{
+  "name": "mesiu.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesiu/mesiu.github.io.git"
+  },
+  "author": "Melissa Siu",
+  "dependencies": {
+    "express": "4.14.0"
+  }
+}
