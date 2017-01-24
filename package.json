@@ -7,7 +7,17 @@
     "url": "git+https://github.com/mesiu/mesiu.github.io.git"
   },
   "author": "Melissa Siu",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "npm run clean && npm run build:css",
+    "build:css": "node-sass --output-style compressed src/sass/styles.scss public/css/styles.css",
+    "clean": "rimraf public"
+  },
   "dependencies": {
     "express": "4.14.0"
+  },
+  "devDependencies": {
+    "node-sass": "4.3.0",
+    "rimraf": "2.5.4"
   }
 }
