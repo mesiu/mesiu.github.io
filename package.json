@@ -10,8 +10,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "npm run clean && npm run build:css",
-    "build:css": "node-sass --output-style compressed src/sass/styles.scss public/css/styles.css",
-    "clean": "rimraf public"
+    "build:css": "node-sass --output-style compressed src/sass/styles.scss dist/css/styles.css",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "express": "4.14.0"
