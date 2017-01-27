@@ -10,7 +10,7 @@
   "scripts": {
     "compile": "harp compile src dist",
     "deploy": "npm run compile && npm run ghpages",
-    "ghpages": "git-directory-deploy --directory dist --branch gh-pages",
+    "ghpages": "git-directory-deploy --directory dist --branch master",
     "start": "harp server src"
   },
   "devDependencies": {
