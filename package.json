@@ -9,12 +9,12 @@
   "author": "Melissa Siu",
   "scripts": {
     "compile": "harp compile src dist",
-    "publish": "npm run compile && bin/publish",
+    "deploy": "npm run compile && npm run ghpages",
+    "ghpages": "git subtree split --prefix dist/ -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages",
     "start": "harp server src"
   },
   "devDependencies": {
     "express": "4.14.0",
-    "gh-pages": "0.12.0",
     "harp": "0.23.0"
   }
 }
