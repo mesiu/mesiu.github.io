@@ -1,4 +1,19 @@
 body {
-  background: $body-bg;
+  background-color: $body-bg;
   color: $body-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+}
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
 }

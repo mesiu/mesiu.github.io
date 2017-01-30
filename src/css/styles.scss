@@ -1,2 +1,11 @@
+// Variables and mixins
 @import "variables.scss";
+
+// Core CSS
+@import "normalize.scss";
 @import "base.scss";
+@import "layout.scss";
+@import "typography.scss";
+
+// Components
+@import "hero.scss";
